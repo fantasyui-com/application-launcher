@@ -110,4 +110,7 @@ applicationInstaller(Object.assign({
   log,
   configurationFile,
   location: path.join( paths.cache, 'core' ),
+
+  open: true,
+
 },configuration));

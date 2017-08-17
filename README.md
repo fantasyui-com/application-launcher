@@ -11,8 +11,7 @@ Just edit the configuration.json in resource directory to specify the name of th
 
 // configuration.json
 {
-  "application": "bootstrap-electron",
-  "open": true
+  "application": "bootstrap-electron"
 }
 
 
