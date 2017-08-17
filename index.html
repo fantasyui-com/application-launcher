@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Application Launcher</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <script>if (typeof module === 'object') {window.module = module; module = undefined;}</script>
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/vue"></script>
+
+  </head>
+
+  <body>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col">
+
+
+          <div id="app-configuration" class="card">
+
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">application: {{configuration.application}}</li>
+              <li class="list-group-item">location: {{configuration.location}}</li>
+              <li class="list-group-item">configuration: {{configuration.configurationFile}}</li>
+            </ul>
+
+          </div>
+
+          <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+
+          <div id="app-progress" class="progress">
+            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" v-bind:aria-valuenow="progress" aria-valuemin="0" aria-valuemax="100" v-bind:style="{ width: progress+ '%' }"></div>
+          </div>
+
+          <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+  </body>
+
+  <script>
+    require('./renderer.js');
+  </script>
+
+</html>
