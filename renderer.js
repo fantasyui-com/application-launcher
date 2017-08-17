@@ -82,7 +82,7 @@ var appProgress = new Vue({
 * * */
 
 $(function(){
-  // $('title').text(pkg.name);
+    $('title').text(__dirname);
 });
 
 
@@ -98,8 +98,12 @@ emitter.on('document-drop', (data) => {
 
 
 
-const configurationFile = path.join(__dirname, 'configuration.json');
+let configurationFile = "";
+if(fs.existsSync( path.join(__dirname, 'configuration.json') )) configurationFile = path.join(__dirname, 'configuration.json');
+if(fs.existsSync( path.join( path.dirname(__dirname), 'configuration.json') )) configurationFile = path.join( path.dirname(__dirname), 'configuration.json');
+
 const configuration = require(configurationFile);
+
 const paths = envPaths( [configuration.application, pkg.name].join("-") );
 applicationInstaller(Object.assign({
   emitter,
