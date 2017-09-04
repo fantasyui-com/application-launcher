@@ -7,6 +7,8 @@ const applicationInstaller = require('application-installer');
 const pkg = require(__dirname + '/package.json')
 const EventEmitter = require('events');
 
+const process = require('process');
+
 const fs = require('fs');
 const path = require('path');
 const url = require('url')
@@ -105,12 +107,20 @@ if(fs.existsSync( path.join( path.dirname(__dirname), 'configuration.json') )) c
 const configuration = require(configurationFile);
 
 const paths = envPaths( [configuration.application, pkg.name].join("-") );
+
+// console.log(require('electron').remote.process.chdir)
+
 applicationInstaller(Object.assign({
+
+  // cwd: require('electron').remote.process.chdir,
+
   emitter,
   log,
+
   configurationFile,
+
   location: path.join( paths.cache, 'core' ),
 
   open: true,
 
-},configuration));
+}, configuration));
