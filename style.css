@@ -5,3 +5,15 @@ html {
 body {
   padding: 1rem;
 }
+
+.screen{
+
+  position: fixed;
+
+  top: 20%;
+  left: 20%;
+  right: 20%;
+
+  max-height: 50%;
+
+}
