@@ -9,6 +9,7 @@ Easily install and launch electron applications from npm locations.
 The main exe will install the npm module and launch the index.html within.
 
 ![](screenshot.png)
+![](app-store.png)
 
 ## Overview
 
