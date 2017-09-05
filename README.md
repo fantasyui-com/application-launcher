@@ -34,5 +34,5 @@ triggering main.js/renderer.js of the application defined in configuration.json.
 ```
 
 this configuration.json will install and launch
-https://www.npmjs.com/package/bootstrap-electron
-available on https://github.com/fantasyui-com/bootstrap-electron
+https://www.npmjs.com/package/app-store
+available on https://github.com/fantasyui-com/app-store
