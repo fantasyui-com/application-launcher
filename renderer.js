@@ -45,7 +45,7 @@ var appProgress = new Vue({
 
 });
 
-$(function(){ $('title').text(__dirname); });
+$(function(){ $('title').text(pkg.productName); });
 
 let configurationFile = "";
 if(fs.existsSync( path.join(__dirname, 'configuration.json') )) configurationFile = path.join(__dirname, 'configuration.json');
