@@ -8,7 +8,7 @@
     "electron"
   ],
   "dependencies": {
-    "application-installer": "^1.10.0",
+    "application-installer": "^1.11.0",
     "env-paths": "^2.2.0",
     "mkdirp": "^0.5.1",
     "npm": "^6.12.1"
