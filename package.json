@@ -11,7 +11,7 @@
     "application-installer": "^1.11.0",
     "env-paths": "^2.2.0",
     "mkdirp": "^0.5.1",
-    "npm": "^6.13.0"
+    "npm": "^6.13.1"
   },
   "devDependencies": {},
   "description": "Easily install and launch electron applications from npm compatible locations.",
