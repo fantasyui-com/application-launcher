@@ -8,10 +8,10 @@
     "electron"
   ],
   "dependencies": {
-    "application-installer": "^1.13.0",
+    "application-installer": "^1.14.0",
     "env-paths": "^2.2.0",
     "mkdirp": "^0.5.1",
-    "npm": "^6.13.4"
+    "npm": "^6.13.6"
   },
   "devDependencies": {},
   "description": "Easily install and launch electron applications from npm compatible locations.",
