@@ -2,7 +2,8 @@
   "main": "main.js",
   "scripts": {
     "start": "electron .",
-    "build": "./build.sh"
+    "build": "./build.sh",
+    "save": "git add .; git commit -m 'New Release'; git push; npm version patch; npm publish; git push;"
   },
   "keywords": [
     "electron"
@@ -19,7 +20,7 @@
     "type": "git",
     "url": "git+https://github.com/fantasyui-com/application-launcher.git"
   },
-  "author": "",
+  "author": "fantasyui.com <fantasyui.com@gmail.com>",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/fantasyui-com/application-launcher/issues"
